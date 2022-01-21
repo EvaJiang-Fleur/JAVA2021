@@ -1,0 +1,30 @@
+**Classes** and **Objects** are fundamental building blocks of Object Oriented code.
+View the slides and video above to see an overview of these constructs.  
+
+At the end of the video a question is posed - see if you can work out the answer to this problem
+(Note that the green "substring" at the bottom of the last slide _isn't_ the solution, but was a _link to the solution_ for use during the lecture).
+Once you have an idea of what the output should be, hover over this <img src="answer.jpg" title="The substring is: 01" style="vertical-align:bottom" />
+button to reveal the actual solution.
+
+Once you are happy with the concepts presented in the lecture, attempt the following practical activity to test your knowledge:
+- Add a new Java Class file to your project: Select `New > Class File` using the popup menu of the `Main` file (found in the `src` folder)
+- Name your class `Triangle`: we will use this class will represent a two dimensional triangular shape !
+- Add a single constructor method: that takes three integer parameters (the length of each side of the triangle)
+- Add a method called `getLongestSide`: that returns the length of the longest side of the triangle
+
+Inside your project's `main` method, use the following code to create a new instance of the `Triangle` class and print out its longest side:
+
+``` java
+Triangle testTriangle = new Triangle(5, 7, 9);
+int longestSide = testTriangle.getLongestSide();
+System.out.println("The longest side of the triangle is " + longestSide);
+```
+
+Create a number of different instances of `Triangle`, each with different length sides
+and check that your `getLongestSide` method operates as expected for each instance.
+
+Notice how in the above code you can "glue" separate Strings together in Java by using the `+` concatenation operator.
+Java will even let you concatenate different types together (in the above example, a `String` and an `int`).
+
+Now use this knowledge to add a `toString` method to your Triangle class that returns a String describing the Triangle
+(e.g. "This is a Triangle with sides of length 4, 5, 7")

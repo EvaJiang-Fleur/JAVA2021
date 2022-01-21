@@ -1,0 +1,9 @@
+The first program that you write in _most_ languages is "Hello World". Take a look at the slides and video above that describe "Hello World" in Java. 
+Create a new Intellij project and then copy and paste the code from the above slide into the `main` method of your project. 
+A number of video tutorials have been provided to walk you through installing Intellij and creating a new blank project.
+Some of these steps are platform specific, so we have provided separate videos for 
+<a href="https://mediasite.bris.ac.uk/Mediasite/Play/eb4047f525c642de8b4bef98c006c2c21d" target="_blank">Ubuntu</a>, 
+<a href="https://mediasite.bris.ac.uk/Mediasite/Play/da355bec145b4c7fa2940738340a454a1d" target="_blank">Windows</a> and
+<a href="https://mediasite.bris.ac.uk/Mediasite/Play/8822c0d46676424497d55a11ac01f8e21d" target="_blank">Mac OSX</a>.
+
+Make sure your code compiles and runs correctly before moving on to the next task in this workbook.

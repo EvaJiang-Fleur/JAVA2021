@@ -1,0 +1,4 @@
+Note: In the videos we illustrate the installation process with Java 11 - it is probably wise to use the most recent version of java (17).  
+
+Note: The lab machines already have Intellij installed, so you can skip the initial download and installation steps
+(although it is still worth updating Java to version 17 during project setup !).

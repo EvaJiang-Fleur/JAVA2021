@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>01 Introduction to Objects</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">01 Introduction to Objects</h1>
+</header>
+<h2 id="introduction-to-objects">Introduction to Objects</h2>
+<h3 id="weekly-briefing"><a href='https://web.microsoftstream.com/group/2ab518ed-5a83-4c36-bfef-c8a2bf702e79?view=videos' target='_blank'> Weekly Briefing <img src="../../resources/icons/briefing.png" /> </a></h3>
+<h3 id="task-1-introduction">Task 1: Introduction</h3>
+<p><a href='01%20Introduction/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='01%20Introduction/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>Welcome to this first practical workbook for the Object Oriented Programming with Java unit. The aim of these workbooks is to present key theoretical concepts that underlie the unit and give you the opportunity to apply these in practical exercises.</p>
+<p>Where you see the blue “Slides” and “Video” buttons at the top of a section, you should view these <em>before</em> attempting the practical activities described in that section. You should do this now for this current task - this will present an introduction to Java and provide you with a high-level understanding of the nature of Object Orientation. Note that it is easier to “clone” these workbooks and view them locally on your own computer (rather than trying to browse them online via the GitHub website).</p>
+<p>One of the reasons we focus on Java in this unit is that it is a very popular and marketable programming language. Before moving on to the main tasks in this workbook, you might like to watch <a href="https://www.youtube.com/watch?v=Og847HVwRSI" target="_blank">this animation</a> to see how Java’s popularity has changed over the years.</p>
+<h1 id="section"></h1>
+<h3 id="task-2-key-concepts">Task 2: Key Concepts</h3>
+<p><a href='02%20Key%20Concepts/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='02%20Key%20Concepts/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>In the previous teaching block, you learnt to program in C (to some extent ;o). In this unit however, you will be using <strong>Java</strong> and as such the <em>organisation</em> of your code <em>should</em> be very different. There are a number of key concepts that are fundamental to <strong>Object Oriented</strong> code. Before we progress to any hands-on practical exercises, it is important that you have an appreciation of these concepts. View the slides and video above to gain an understanding of these characteristics of Object Oriented code. At this stage, we only introduce the concepts at a very high level - we will revisit them again in later sections of this workbook (and indeed, in later workbooks).</p>
+<h1 id="section-1"></h1>
+<h3 id="task-3-hello-world">Task 3: Hello World</h3>
+<p><a href='03%20Hello%20World/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='03%20Hello%20World/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>The first program that you write in <em>most</em> languages is “Hello World”. Take a look at the slides and video above that describe “Hello World” in Java. Create a new Intellij project and then copy and paste the code from the above slide into the <code>main</code> method of your project. A number of video tutorials have been provided to walk you through installing Intellij and creating a new blank project. Some of these steps are platform specific, so we have provided separate videos for <a href="https://mediasite.bris.ac.uk/Mediasite/Play/eb4047f525c642de8b4bef98c006c2c21d" target="_blank">Ubuntu</a>, <a href="https://mediasite.bris.ac.uk/Mediasite/Play/da355bec145b4c7fa2940738340a454a1d" target="_blank">Windows</a> and <a href="https://mediasite.bris.ac.uk/Mediasite/Play/8822c0d46676424497d55a11ac01f8e21d" target="_blank">Mac OSX</a>.</p>
+<p>Make sure your code compiles and runs correctly before moving on to the next task in this workbook.</p>
+<p><strong>Hints &amp; Tips:</strong><br />
+Note: In the videos we illustrate the installation process with Java 11 - it is probably wise to use the most recent version of java (17).</p>
+<p>Note: The lab machines already have Intellij installed, so you can skip the initial download and installation steps (although it is still worth updating Java to version 17 during project setup !).</p>
+<h1 id="section-2"></h1>
+<h3 id="task-4-build-systems">Task 4: Build Systems</h3>
+<p><a href='04%20Build%20Systems/deep/maven.pdf' target='_blank'> <img src="../../resources/icons/deep.png" /> </a></p>
+<p>Now that you have some experience of creating Intellij projects, it is worth spending a bit of time exploring the related topic of <em>build systems</em>. Introducing this concept very early on in the unit may seem a bit odd, but they are a core part of most major software projects (be they Open Source projects or in-house proprietary development work). Build systems are so important that in many big projects there is a dedicated engineer who handles build and release related tasks (look up “DevOps” if you don’t believe us !).</p>
+<p>You may have used <em>GNU Make</em> previously on this degree programme: this software saves you from having to type out the compile/link commands every time you want to build your software. <code>Make</code> takes care of running all the required build commands (as specified in the <code>Makefile</code>) and intelligently works out what needs to be done (by checking the modification times of all the files involved).</p>
+<p><code>Make</code> however isn’t commonly used for Java development. This is partly due to the fact that building Java projects usually involve much more complicated activities than just running a set of commands. In addition to this, Java is all about creating cross-platform software - so we need to avoid the use of platform specific commands often used by <code>make</code>. For these reasons, we will instead be making use of the <strong>Maven</strong> build system. Take a look at the PDF document linked to above if you’d like to find out more about Maven.</p>
+<p>In future tasks and workbooks, you will be given templates in the form of Maven projects. These contain all of the rules and dependencies required to build a project. One of the main benefits is that these projects can be imported directly into Intellij (or any other IDE for that matter). This saving us a lot of time installing required libraries and setting up the build environment.</p>
+<h1 id="section-3"></h1>
+<h3 id="task-5-classes-and-objects">Task 5: Classes and Objects</h3>
+<p><a href='05%20Classes%20and%20Objects/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='05%20Classes%20and%20Objects/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p><strong>Classes</strong> and <strong>Objects</strong> are fundamental building blocks of Object Oriented code. View the slides and video above to see an overview of these constructs.</p>
+<p>At the end of the video a question is posed - see if you can work out the answer to this problem (Note that the green “substring” at the bottom of the last slide <em>isn’t</em> the solution, but was a <em>link to the solution</em> for use during the lecture). Once you have an idea of what the output should be, hover over this <img src="answer.jpg" title="The substring is: 01" style="vertical-align:bottom" /> button to reveal the actual solution.</p>
+<p>Once you are happy with the concepts presented in the lecture, attempt the following practical activity to test your knowledge: - Add a new Java Class file to your project: Select <code>New &gt; Class File</code> using the popup menu of the <code>Main</code> file (found in the <code>src</code> folder) - Name your class <code>Triangle</code>: we will use this class will represent a two dimensional triangular shape ! - Add a single constructor method: that takes three integer parameters (the length of each side of the triangle) - Add a method called <code>getLongestSide</code>: that returns the length of the longest side of the triangle</p>
+<p>Inside your project’s <code>main</code> method, use the following code to create a new instance of the <code>Triangle</code> class and print out its longest side:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1"></a>Triangle testTriangle = <span class="kw">new</span> <span class="fu">Triangle</span>(<span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>);</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">int</span> longestSide = testTriangle.<span class="fu">getLongestSide</span>();</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="bu">System</span>.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;The longest side of the triangle is &quot;</span> + longestSide);</span></code></pre></div>
+<p>Create a number of different instances of <code>Triangle</code>, each with different length sides and check that your <code>getLongestSide</code> method operates as expected for each instance.</p>
+<p>Notice how in the above code you can “glue” separate Strings together in Java by using the <code>+</code> concatenation operator. Java will even let you concatenate different types together (in the above example, a <code>String</code> and an <code>int</code>).</p>
+<p>Now use this knowledge to add a <code>toString</code> method to your Triangle class that returns a String describing the Triangle (e.g. “This is a Triangle with sides of length 4, 5, 7”)</p>
+<h1 id="section-4"></h1>
+<h3 id="task-6-inheritance-and-polymorphism">Task 6: Inheritance and Polymorphism</h3>
+<p><a href='06%20Inheritance%20and%20Polymorphism/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='06%20Inheritance%20and%20Polymorphism/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a> <a href='06%20Inheritance%20and%20Polymorphism/deep/segment-1.pdf' target='_blank'> <img src="../../resources/icons/deep.png" /> </a> <a href='06%20Inheritance%20and%20Polymorphism/deep/segment-1.mp4' target='_blank'> <img src="../../resources/icons/deep.png" /> </a></p>
+<p>View the slides and video above to gain an understanding of the concept of <strong>Inheritance</strong>. Then attempt the following task which will add to your existing project. Note that the “PRO” slides and video aren’t <em>required</em> to complete this exercise, but provide some deeper and more complex information regarding the concept of inheritance for those of you who are interested (the code fragments from the “PRO” slides can be found in <a href="pro-code.zip" target="_blank">this zipfile</a>).</p>
+<p>There are many different types of shape in the world (in addition to just triangles !). We have created a <a href="Intellij Template/" target="_blank">Maven template project</a> for you that contains a simple hierarchy of shapes including a <a href="Intellij Template/cw-shapes/src/main/java/edu/uob/Circle.java" target="_blank">Circle</a> and a <a href="Intellij Template/cw-shapes/src/main/java/edu/uob/Rectangle.java" target="_blank">Rectangle</a>. As you can see by reviewing the code for these classes, both share the same super class called <a href="Intellij Template/cw-shapes/src/main/java/edu/uob/TwoDimensionalShape.java" target="_blank">TwoDimensionalShape</a> (from which all 2D shapes will inherit).</p>
+<p>Download the <a href="Intellij Template/" target="_blank">Maven template project</a> and open it in Intellij. You will see that there is already a basic <code>Triangle</code> class file inside the <code>src</code> folder (you might need to hunt for it !). Once you have found the file, paste in the code that you wrote in the previous task. Then integrate the <code>Triangle</code> class into the class hierarchy by using the <code>extends</code> keyword at an appropriate place in the <code>Triangle</code> file to link it to the <code>TwoDimensionalShape</code> class.</p>
+<p>The slides and video linked to above above also discussed the notion of <strong>Polymorphism</strong>. Let us explore this concept in your code: inside the project’s <code>main</code> method, create a variable that can hold an instance of the <code>TwoDimensionalShape</code> class. Try to fill this variable with each type of shape in turn (<code>Circle</code>, <code>Rectangle</code> and <code>Triangle</code>). Each time, print the content of the variable - just to show what type it currently holds.</p>
+<p><strong>Hints &amp; Tips:</strong><br />
+If you try to print out an instance of a class by passing it to <code>println</code>, it will call the <code>toString</code> method of that object in order to get a printable string. Lucky you wrote just such a method for your <code>Triangle</code> class in the previous task of this workbook !</p>
+<h1 id="section-5"></h1>
+<h3 id="task-7-encapsulation">Task 7: Encapsulation</h3>
+<p><a href='07%20Encapsulation/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='07%20Encapsulation/slides/segment-2.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='07%20Encapsulation/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a> <a href='07%20Encapsulation/video/segment-2.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>As you will see from the slides and video linked to above, <strong>Encapsulation</strong> is another key concept in Object Oriented programming. Let us explore this notion of encapsulation in more depth by adding some internal state to our project. In addition to a number of edges, all shapes also have a colour. Add a new variable to the <code>TwoDimensionalShape</code> class that allows the shape’s colour to be stored.</p>
+<p>To help you in this task, we have provided you with a <a href="Intellij Template/cw-shapes/src/main/java/edu/uob/Colour.java" target="_blank">Colour</a> type. This file is already part of the project (so you won’t need to add it manually) and can be used in the following way:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1"></a>Colour firstColour = Colour.<span class="fu">RED</span>;</span>
+<span id="cb2-2"><a href="#cb2-2"></a>Colour secondColour = Colour.<span class="fu">YELLOW</span>;</span>
+<span id="cb2-3"><a href="#cb2-3"></a>Colour thirdColour = Colour.<span class="fu">WHITE</span>;</span></code></pre></div>
+<p>By implementing this variable as <code>private</code> you successfully encapsulate the colour of the shape inside the object.</p>
+<h1 id="section-6"></h1>
+<h3 id="task-8-controlling-access">Task 8: Controlling Access</h3>
+<p><a href='08%20Controlling%20Access/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='08%20Controlling%20Access/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a> <a href='08%20Controlling%20Access/deep/segment-1.pdf' target='_blank'> <img src="../../resources/icons/deep.png" /> </a> <a href='08%20Controlling%20Access/deep/segment-1.mp4' target='_blank'> <img src="../../resources/icons/deep.png" /> </a></p>
+<p>It is no good being able to store the colour of a shape if there is no way to access it ! After all, how would we draw a shape if there was no way to find out what colour it was ? Take a look at the slides and video above to find out why we need to be careful when providing access to encapsulated data. Using this knowledge, add <code>setColour</code> and <code>getColour</code> methods to the <code>TwoDimensionalShape</code> class.</p>
+<p>As programmers, we have a lot of control over the access to our variables, methods and classes. Check out the “PRO” slides and video above for more details on the various options available.</p>
+<h1 id="section-7"></h1>
+<h3 id="task-9-building-in-the-terminal">Task 9: Building in the Terminal</h3>
+<p>In this workbook, we have spent the majority of the time exploring the use of Intellij. At this stage however, it is worth spending a little bit of time taking a look at how we can build and run Maven projects on the command line. This is important because the assessed exercises later on in the unit will be marked on the command line and you need to be able to make sure that your code will actually build and run.</p>
+<p>On your command line, change into the project root folder (the directory where the <code>pom.xml</code> file resides) and type one of the following commands (depending on your platform):</p>
+<pre><code>Linux/OSX:   ./mvnw clean compile
+Windows:     mvnw clean compile</code></pre>
+<p><strong>Note</strong>: On some unix systems, you <em>might</em> need to make <code>mvnw</code> executable first (i.e. by running <code>chmod +x mvnw</code>)</p>
+<p>The command is doing 2 separate things in order:</p>
+<ol type="1">
+<li><code>clean</code> makes sure that everything will be freshly built by cleaning out (deleting) all previously generated files</li>
+<li><code>compile</code> compiles and builds all files and resources (stopping if any build error occurs)</li>
+</ol>
+<p>Note that you can learn more about these and other build tasks in the <a href="https://maven.apache.org/guides/getting-started/index.html">Maven documentation</a>.</p>
+<p>The first time you run this command, it might take a while to complete so be patient. This is because Maven may need to download project dependencies from the web (obviously if you haven’t got a working internet connection Maven may well fail at this point !) If successful, the output should looks something like this:</p>
+<pre><code>[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 42 s
+[INFO] Finished at: 2022-01-01T00:00:00Z
+[INFO] Final Memory: 42M/420M
+[INFO] ------------------------------------------------------------------------</code></pre>
+<p>If you get a <code>BUILD FAILURE</code>, it means the project failed to complete some of the specified tasks. If this is the case, it might make sense to go back into IntelliJ and make sure no code issues are detected (i.e. no code is highlighted in red and the project can still be built and run). Fix any problems in IntelliJ and then return to the command line.</p>
+<p>Once you have successfully built your code on the command line, you can run your program using:</p>
+<pre><code>Linux/OSX:   ./mvnw exec:java
+Windows:     mvnw exec:java</code></pre>
+<p>Note that this will run the <code>main</code> method from the <code>Shapes</code> class - if you want to run the main method of <em>another</em> class, you can edit the project’s <code>pom.xml</code> file and change the <code>mainClass</code> to be the desired class.</p>
+<h1 id="section-8"></h1>
+<h3 id="task-10-final-thoughts">Task 10: Final Thoughts</h3>
+<p>It is important to note that the <code>StyledString</code> examples shown in the lecture slides and discussed in the videos are just a <em>theoretical</em> example. We have targeted the <code>String</code> class because this is consistent with your current level of knowledge and understanding of the Java language. In reality Java does not let us manipulate the styling of the <code>String</code> class in this way and we would have to resort to other, more sophisticated classes to achieve the desire results.</p>
+<h1 id="section-9"></h1>
+</body>
+</html>

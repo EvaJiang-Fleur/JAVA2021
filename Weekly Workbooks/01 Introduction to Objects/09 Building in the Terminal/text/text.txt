@@ -1,0 +1,43 @@
+In this workbook, we have spent the majority of the time exploring the use of Intellij.
+At this stage however, it is worth spending a little bit of time taking a look at how we can build and run
+Maven projects on the command line. This is important because the assessed exercises later on in the
+unit will be marked on the command line and you need to be able to make sure that your code will actually build and run.
+
+On your command line, change into the project root folder (the directory where the `pom.xml` file resides) and type one of the following commands (depending on your platform):
+
+    Linux/OSX:   ./mvnw clean compile
+    Windows:     mvnw clean compile
+
+**Note**: On some unix systems, you _might_ need to make `mvnw` executable first
+(i.e. by running `chmod +x mvnw`)
+
+The command is doing 2 separate things in order:
+
+1. `clean` makes sure that everything will be freshly built by cleaning out (deleting) all previously generated files
+2. `compile` compiles and builds all files and resources (stopping if any build error occurs)
+
+Note that you can learn more about these and other build tasks in the <a href="https://maven.apache.org/guides/getting-started/index.html">Maven documentation</a>.
+
+The first time you run this command, it might take a while to complete so be patient. This is because Maven may need to download project dependencies from the web (obviously if you haven't got a working internet connection Maven may well fail at this point !)
+If successful, the output should looks something like this:
+
+    [INFO] ------------------------------------------------------------------------
+    [INFO] BUILD SUCCESS
+    [INFO] ------------------------------------------------------------------------
+    [INFO] Total time: 42 s
+    [INFO] Finished at: 2022-01-01T00:00:00Z
+    [INFO] Final Memory: 42M/420M
+    [INFO] ------------------------------------------------------------------------
+
+If you get a `BUILD FAILURE`, it means the project failed to complete some of the specified tasks.
+If this is the case, it might make sense to go back into IntelliJ and make sure no code issues are detected
+(i.e. no code is highlighted in red and the project can still be built and run).
+Fix any problems in IntelliJ and then return to the command line.
+
+Once you have successfully built your code on the command line, you can run your program using:
+
+    Linux/OSX:   ./mvnw exec:java
+    Windows:     mvnw exec:java
+
+Note that this will run the `main` method from the `Shapes` class - if you want to run the main method of _another_ class,
+you can edit the project's `pom.xml` file and change the `mainClass` to be the desired class.

@@ -17,7 +17,7 @@ as well as an activity to undertake that will allow you to apply your freshly-ga
 
 An inspection of the code inside the `TwoDimensionalShape` class (found in `src/main/java/` folder of the Maven project)
 will reveal that the class has two **abstract** methods.
-These are methods _without_ implementations (i.e. they have signatures, but no internal code).
+These are methods _without_ implementations - they have signatures ("prototypes"), but no internal code.
 View the slides and video lecture above to find out more about the notion of **abstract** and the reasons why we might want to use this feature of Java.
 
 Now, inside your `Triangle` class, write complete `calculateArea` and `calculatePerimeterLength` methods so that each performs a suitable
@@ -131,7 +131,7 @@ that contains a variety of test cases to help you comprehensively and systematic
 This test file makes use of a testing framework called **JUnit** (which you will learn more about in one of your other units !)
 
 You should drop this file into the `src/test/java/edu/uob` folder in your project (so that Intellij can find it !).
-Then right-click on the file in the Intellij project explorer and select `Run 'All Tests'` in the popup menu in order to run the tests.
+Then right-click on the file in the Intellij project explorer and select `Run 'TriangleTests'` in the popup menu in order to run the tests.
 Alternatively, you can run individual test methods by opening the `TriangleTests` file in the Intellij editor and then
 clicking on the green "play" button to the left of the method name.
 Once the tests have finished running, you should see a report detail which have passed and which have failed.

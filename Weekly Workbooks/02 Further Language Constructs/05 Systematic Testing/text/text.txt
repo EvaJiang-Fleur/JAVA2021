@@ -8,7 +8,7 @@ that contains a variety of test cases to help you comprehensively and systematic
 This test file makes use of a testing framework called **JUnit** (which you will learn more about in one of your other units !)
 
 You should drop this file into the `src/test/java/edu/uob` folder in your project (so that Intellij can find it !).
-Then right-click on the file in the Intellij project explorer and select `Run 'All Tests'` in the popup menu in order to run the tests.
+Then right-click on the file in the Intellij project explorer and select `Run 'TriangleTests'` in the popup menu in order to run the tests.
 Alternatively, you can run individual test methods by opening the `TriangleTests` file in the Intellij editor and then
 clicking on the green "play" button to the left of the method name.
 Once the tests have finished running, you should see a report detail which have passed and which have failed.

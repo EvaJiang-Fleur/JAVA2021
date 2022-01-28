@@ -1,6 +1,6 @@
 An inspection of the code inside the `TwoDimensionalShape` class (found in `src/main/java/` folder of the Maven project)
 will reveal that the class has two **abstract** methods.
-These are methods _without_ implementations (i.e. they have signatures, but no internal code).
+These are methods _without_ implementations - they have signatures ("prototypes"), but no internal code.
 View the slides and video lecture above to find out more about the notion of **abstract** and the reasons why we might want to use this feature of Java.
 
 Now, inside your `Triangle` class, write complete `calculateArea` and `calculatePerimeterLength` methods so that each performs a suitable

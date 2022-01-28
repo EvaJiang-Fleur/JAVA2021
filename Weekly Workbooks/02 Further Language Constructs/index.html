@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>02 Further Language Constructs</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">02 Further Language Constructs</h1>
+</header>
+<h2 id="further-language-constructs">Further Language Constructs</h2>
+<h3 id="weekly-briefing"><a href='https://web.microsoftstream.com/group/2ab518ed-5a83-4c36-bfef-c8a2bf702e79?view=videos' target='_blank'> Weekly Briefing <img src="../../resources/icons/briefing.png" /> </a></h3>
+<h3 id="task-1-introduction">Task 1: Introduction</h3>
+<p>The aim of this workbook is to introduce further concepts and constructs from the Java programming language. In order to support this, we will continue working with the “triangle” exercise from last week, which you will extend and enhance with additional features and functionality. As before, each section in this workbook provides some teaching materials that introduces a concept, as well as an activity to undertake that will allow you to apply your freshly-gained knowledge.</p>
+<h1 id="section"></h1>
+<h3 id="task-2-abstract">Task 2: Abstract</h3>
+<p><a href='02%20Abstract/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='02%20Abstract/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>An inspection of the code inside the <code>TwoDimensionalShape</code> class (found in <code>src/main/java/</code> folder of the Maven project) will reveal that the class has two <strong>abstract</strong> methods. These are methods <em>without</em> implementations (i.e. they have signatures, but no internal code). View the slides and video lecture above to find out more about the notion of <strong>abstract</strong> and the reasons why we might want to use this feature of Java.</p>
+<p>Now, inside your <code>Triangle</code> class, write complete <code>calculateArea</code> and <code>calculatePerimeterLength</code> methods so that each performs a suitable calculation and returns an appropriate result. These two methods will <strong>override</strong> the abstract (blank) methods defined in the <code>TwoDimensionalShape</code> class.</p>
+<p>The reason why these two methods were originally defined as <strong>abstract</strong> in the <code>TwoDimensionalShape</code> class is as follows… All shapes <em>will</em> have an area and perimeter length, however: each shape will <em>calculate</em> these differently depending of the shape being represented (Circles this is done using their radius and Pi, with Rectangles this is down using their width and height etc.) As such, we can’t write anything <em>generally useful</em> inside the <code>TwoDimensionalShape</code> class - we have to leave everything down to the subclasses. That said, it is still worth defining that all shapes have area and perimeter calculations (even if they have to be left blank in the <code>TwoDimensionalShape</code> class).</p>
+<p>Once you have implemented area and perimeter calculation methods for your <code>Triangle</code> class, create a few <code>Triangles</code> with different length sides and call your freshly created methods to make sure they work correctly.</p>
+<p><strong>Hints &amp; Tips:</strong><br />
+Calculating the perimeter length of a triangle is easy.<br />
+In order to calculate the area you might like to use <a href="https://www.mathsisfun.com/geometry/herons-formula.html" target="_blank">Herons Formula</a>.</p>
+<h1 id="section-1"></h1>
+<h3 id="task-3-enumerations">Task 3: Enumerations</h3>
+<p><a href='03%20Enumerations/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='03%20Enumerations/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a> <a href='03%20Enumerations/deep/segment-1.mp4' target='_blank'> <img src="../../resources/icons/deep.png" /> </a></p>
+<p>Some shapes (such as Circles) come in only one variant - a Circle is a Circle ! Other shapes however (Triangles for example) can come in range of different variants (Isosceles, Right-angle, Equilateral etc). We <em>could</em> create a range of subclasses of the <code>Triangle</code> class to represent each of these… However this might be seen as overkill, since the various sub-classes wouldn’t have any additional attributes or methods, so we could end up with a lot of almost empty files (causing unnecessary clutter in our file system !)</p>
+<p>Instead, we will use this opportunity to explore another feature of Java - <strong>enumerations</strong>. In Java there is an enumeration mechanism (very much like that in C). This allows us to declare a predefined list of values that a variable can hold. Take a look at the slides and videos above (from our guest presenter !) to find out more details regarding enumerations, then attempt the task described below.</p>
+<p>With the knowledge you have gained from these slides and videos, add to your <code>Triangle</code> Class to make it “self-aware”: so that instances of the class will <em>know</em> what kind of triangle they are. As a programmer, we aren’t going to actually <em>tell</em> the triangle what variant it is, the triangle will work it out for itself (based on the length of the sides passed into the constructor). Add some code to your <code>Triangle</code> constructor method so that it works out what kind it is and stores the result in a private variable. We have provided you with an enumeration called <code>TriangleVariant</code> (found in the <code>src/main/java/</code> folder) that can be used to differentiate between the various triangle variants.</p>
+<p>You will get the opportunity to fully and systematically test your variant detection code in a later section. For the time being, just try to make sure your code works with a few different test triangles.</p>
+<p><strong>Hints &amp; Tips:</strong><br />
+Perhaps the simplest way to approach this task is to create a multi-branch IF statement that will classify the triangle. The order of the branches of the IF statements will be very important: you should check for specific/special cases at the top, with more general cases at the bottom (you’ll soon understand why later !)</p>
+<p>For some triangle variants, you might find it useful to make use of the <code>getLongestSide</code> method your wrote previously !</p>
+<h1 id="section-2"></h1>
+<h3 id="task-4-interfaces">Task 4: Interfaces</h3>
+<p><a href='04%20Interfaces/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='04%20Interfaces/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>As we have discussed previously, some shapes have a number of variants, whilst others (such as Circles) have only one. It would be useful to have some kind of “marker” that indicates whether or not a particular shape has multiple variants.</p>
+<p>One way to do this is using a Java <strong>Interface</strong> - this is a mechanism, independent of the class hierarchy, that allows us to “mark” classes as having particular characteristics. You can think of an Interface as a “contract” that the class “conforms to” - guaranteeing to provide certain properties and features. Take a look at the slides and video above for more detailed information about interfaces.</p>
+<p>As an illustration of interfaces in action, we have provided a <code>MultiVariantShape</code> interface in the Maven project that can be used to indicate that a shape has more than one variant. We can mark our <code>Triangle</code> class as a shape which has multiple variants using this interface like so:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">class</span> Triangle <span class="kw">extends</span> TwoDimensionalShape <span class="kw">implements</span> MultiVariantShape</span></code></pre></div>
+<p>The use of the keyword <code>implements</code> indicates that this class conforms to the properties and features of the <code>MultiVariantShape</code> interface.</p>
+<p>Elsewhere in our code, we can test to see if a particular object conforms to an interface by using the <code>instanceof</code> keyword (I know that this is not a particularly suitable name, but it is reused from another part of Java). We can test any shape object to see if it implements the <code>MultiVariantShape</code> interface using the following code:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">if</span>(shape <span class="kw">instanceof</span> MultiVariantShape) <span class="bu">System</span>.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;This shape has multiple variants&quot;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">else</span> <span class="bu">System</span>.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;This shape has only one variant&quot;</span>)</span></code></pre></div>
+<p>You may have noticed that the <code>MultiVariantShape</code> interface defines a method called <code>getVariant</code> that should return the particular variant of a shape. This allows code outside of the class to interrogate an instance in order to find out which variant it is. You will also notice that in the interface definition, their is no code that provides an implementation of this method - it your job as the programmer’s to write this ! Let’s do this now by adding a method to your <code>Triangle</code> class called <code>getVariant</code> that returns the <code>TriangleVariant</code> that you calculated and stored in the previous task.</p>
+<h1 id="section-3"></h1>
+<h3 id="task-5-systematic-testing">Task 5: Systematic Testing</h3>
+<p>You have by now implemented a fair bit of functionality in your code. However, the chances are that it is not <em>totally</em> fault free ;o) It is a good idea for us to take a pause from adding new features for a moment and fix any problems or issues that may currently exist in our code.</p>
+<p>We have provided a <a href="Test Script/TriangleTests.java" target="_blank">triangle test file</a> that contains a variety of test cases to help you comprehensively and systematically test your code. This test file makes use of a testing framework called <strong>JUnit</strong> (which you will learn more about in one of your other units !)</p>
+<p>You should drop this file into the <code>src/test/java/edu/uob</code> folder in your project (so that Intellij can find it !). Then right-click on the file in the Intellij project explorer and select <code>Run 'All Tests'</code> in the popup menu in order to run the tests. Alternatively, you can run individual test methods by opening the <code>TriangleTests</code> file in the Intellij editor and then clicking on the green “play” button to the left of the method name. Once the tests have finished running, you should see a report detail which have passed and which have failed.</p>
+<p>When testing your Triangle code, you should focus on each type of triangle in turn (first Equilateral, then Isosceles, then Scalene etc.). Make sure your code passes all of the tests for that variant before moving on to the next. The final group of tests (to do with overflow) are more difficult, so you should leave those until the end. Note that these final tests may require you to refactor your code a fair bit (depending on how you wrote it in the first place) !</p>
+<h1 id="section-4"></h1>
+<h3 id="task-6-testing-in-the-terminal">Task 6: Testing in the Terminal</h3>
+<p>In some situations (e.g. during the coursework marking process) it is useful to be able to run the test cases from the command line (rather than having to start up Intellij). In order to run all of the unit tests present within a Maven project, change into the project root folder in your command prompt and type:</p>
+<pre><code>Linux/OSX:   ./mvnw clean test
+Windows:     mvnw clean test</code></pre>
+<p>If all unit tests have been passed, you should get a <code>[INFO] BUILD SUCCESS</code> message at the end of the output.</p>
+<p>If on the other hand some tests were failed, the output should look something like the following:</p>
+<pre><code>Tests run: ?, Failures: ?, Errors: ?, Skipped: ?
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 42 s
+[INFO] Finished at: 1970-01-01T00:00:00Z
+[INFO] Final Memory: 42M/420M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal test (default-test): There are test failures.</code></pre>
+<h1 id="section-5"></h1>
+<h3 id="task-7-multiple-inheritance-optional">Task 7: Multiple Inheritance (optional)</h3>
+<p><a href='07%20Multiple%20Inheritance%20%28optional%29/deep/segment-1.pdf' target='_blank'> <img src="../../resources/icons/deep.png" /> </a> <a href='07%20Multiple%20Inheritance%20%28optional%29/deep/segment-1.mp4' target='_blank'> <img src="../../resources/icons/deep.png" /> </a></p>
+<p>Just as an aside, let us think about <em>multiple</em> inheritance. In some situations, it might be useful for a class to have multiple parents/superclasses. This would allow it to derive methods and attributes from numerous different sources. This is however dangerous - take a look at the slides and video above to find out why !</p>
+<p>Java’s solution to this is to only allow single inheritance, but to augment this with interfaces. Although a bit of a compromise, this mechanism allows us to gain <em>some</em> of the benefits of multiple inheritance, whilst avoiding many of the main pitfalls.</p>
+<h1 id="section-6"></h1>
+<h3 id="task-8-arrays">Task 8: Arrays</h3>
+<p><a href='08%20Arrays/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='08%20Arrays/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>Common to most programming languages, Java provides an <strong>array</strong> data structure (similar in many ways to that found in C). In Java, arrays can hold primitives (e.g. <code>int</code>, <code>float</code>, <code>char</code>, <code>boolean</code> etc) but ALSO complex Objects (such as <code>Strings</code>, <code>Robots</code> or even <code>Triangles</code>) !</p>
+<p>Take a look at the slides and video above for more information on using arrays in Java. Then (in your main method) create an array of size 100 that can hold <code>TwoDimensionalShapes</code>. Fill this array with randomly chosen shapes (<code>Circles</code>, <code>Rectangles</code>, <code>Triangles</code>).</p>
+<p>Once you have filled the array with 100 shapes, loop through it and print out the details of each shape in turn. At the end of your main method, print out a summary of how many <code>Triangles</code> were in the array. In order to do this, you will need to make use of an integer counter variable to keep a tally of the number of triangles encountered. You might also like to make use the <code>instanceof</code> operator to check the type of each instance in the array !</p>
+<p><strong>Hints &amp; Tips:</strong><br />
+In order to fill your array with a random selection of shapes, you may like to make use of the Java <code>random</code> method:</p>
+<p><code>Math.random()</code></p>
+<p>This will return a randomly selected double precision floating point number (between 0.0 and 1.0). You will need to write an IF statement and use some cunning maths to look at this number and decide which shape to create.</p>
+<h1 id="section-7"></h1>
+<h3 id="task-9-class-variables-and-methods">Task 9: Class Variables and Methods</h3>
+<p><a href='09%20Class%20Variables%20and%20Methods/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='09%20Class%20Variables%20and%20Methods/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>In the previous task, we counted the number of <code>Triangles</code> in the array by looping through it. But there is an alternative way to achieve the same objective (without putting code inside the loop). We could maintain a counter of how many <code>Triangles</code> have been created <em>inside</em> the Triangle class and increment this each time a Triangle is instantiated. This would encapsulate the “population” count inside the class itself - which is nice.</p>
+<p>But there is a problem this with approach - we only want <em>one</em> counter for the whole program (not a counter inside <em>each and every</em> <code>Triangle</code> instance). For this reason, we can’t just use a “normal” variable. View the slides and audio narration above to gain an understanding of the difference between <strong>instance</strong> and <strong>class</strong> variables. Then add an integer <strong>class</strong> variable to your <code>Triangle</code> class to keep track of how many <code>Triangles</code> have been created (don’t forget to increment this in the constructor !). Also add a <code>getPopulation</code> method to your <code>Triangle</code> class that returns the current value of this counter variable, so that it can be accessed from outside the class.</p>
+<p>Update your main method, so that it prints out the number of <code>Triangles</code> that exist using this class variable population counter <em>as well as</em> the previous counter from inside the loop (just to make sure both counters agree !)</p>
+<p>Just as we can create <strong>class variables</strong> that are associated with the class (rather than each instance), we can also write <strong>class methods</strong> which are similarly associated with the class (rather than the instances). You have already encountered just such a class method (namely the <code>random</code> method of the <code>Math</code> class). Have a think about the reasons why you might wish to write a class method, rather than an instance method. Considering the <code>Triangle</code> class - might some of its methods be better suited to being class methods, rather than instance methods ?</p>
+<h1 id="section-8"></h1>
+<h3 id="task-10-casting">Task 10: Casting</h3>
+<p>Let’s imagine that we wanted to find out the variant of a <code>Triangle</code> that is stored in the array. We would need to be very careful about how we went about interrogating the elements of that array. We can’t call <code>getVariant</code> on just any element, since not all objects will actually <em>be</em> a <code>Triangle</code> (it might be a <code>Circle</code> for example, which doesn’t support the <code>getVariant</code> method !) Java will in fact block us from trying to call <code>getVariant</code> on a <code>TwoDimentionalShape</code> (try it and see !).</p>
+<p>To solve this problem, Java allows us <strong>cast</strong> objects from one class into a more specific class. For example, we can “down-cast” (or “narrow-cast”) any <code>TwoDimentionalShape</code> into one of its sub-classes. We can then quite happily call methods of that subclass on the instance. For example, in the code fragment below we extract the first element from the array and convert it into a <code>Triangle</code>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1"></a>TwoDimentionalShape[] shapes = <span class="kw">new</span> TwoDimentionalShape[<span class="dv">100</span>];</span>
+<span id="cb5-2"><a href="#cb5-2"></a>...</span>
+<span id="cb5-3"><a href="#cb5-3"></a>TwoDimentionalShape firstShape = shapes[<span class="dv">0</span>];</span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="co">// Down-cast the shape into a triangle</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>Triangle firstTriangle = (Triangle)firstShape;</span>
+<span id="cb5-6"><a href="#cb5-6"></a>TriangleVariant variant = firstTriangle.<span class="fu">getVariant</span>();</span></code></pre></div>
+<p>The down-casting code above asks Java to “trust” that the <code>firstShape</code> is a <code>Triangle</code>. As a consequence of this, we can then treat this object as though it were a <code>Triangle</code> and thus call any method of the <code>Triangle</code> class on it.</p>
+<p>This is fine, <em>provided</em> that the shape at element 0 of the array <em>is actually</em> a <code>Triangle</code>.<br />
+But what happens if it <em>isn’t</em> ?<br />
+What if it is a <code>Circle</code> instead ?<br />
+Will Java let us convert a <code>Circle</code> into a <code>Triangle</code> in this way ?</p>
+<p>Why not try it and see what happens !</p>
+<h1 id="section-9"></h1>
+</body>
+</html>

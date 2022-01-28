@@ -1,0 +1,5 @@
+The aim of this workbook is to introduce further concepts and constructs from the Java programming language.
+In order to support this, we will continue working with the "triangle" exercise from last week,
+which you will extend and enhance with additional features and functionality.
+As before, each section in this workbook provides some teaching materials that introduces a concept,
+as well as an activity to undertake that will allow you to apply your freshly-gained knowledge. 

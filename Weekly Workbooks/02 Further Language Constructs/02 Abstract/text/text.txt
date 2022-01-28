@@ -1,0 +1,18 @@
+An inspection of the code inside the `TwoDimensionalShape` class (found in `src/main/java/` folder of the Maven project)
+will reveal that the class has two **abstract** methods.
+These are methods _without_ implementations (i.e. they have signatures, but no internal code).
+View the slides and video lecture above to find out more about the notion of **abstract** and the reasons why we might want to use this feature of Java.
+
+Now, inside your `Triangle` class, write complete `calculateArea` and `calculatePerimeterLength` methods so that each performs a suitable
+calculation and returns an appropriate result.
+These two methods will **override** the abstract (blank) methods defined in the `TwoDimensionalShape` class.
+
+The reason why these two methods were originally defined as **abstract** in the `TwoDimensionalShape` class is as follows...
+All shapes _will_ have an area and perimeter length, however: each shape will _calculate_ these differently depending of the shape being represented
+(Circles this is done using their radius and Pi, with Rectangles this is down using their width and height etc.)
+As such, we can't write anything _generally useful_ inside the `TwoDimensionalShape` class - we have to leave
+everything down to the subclasses. That said, it is still worth defining that all shapes have area and perimeter calculations
+(even if they have to be left blank in the `TwoDimensionalShape` class).
+
+Once you have implemented area and perimeter calculation methods for your `Triangle` class, create a few
+`Triangles` with different length sides and call your freshly created methods to make sure they work correctly.

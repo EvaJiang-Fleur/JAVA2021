@@ -1,0 +1,7 @@
+Just as an aside, let us think about _multiple_ inheritance.
+In some situations, it might be useful for a class to have multiple parents/superclasses.
+This would allow it to derive methods and attributes from numerous different sources.
+This is however dangerous - take a look at the slides and video above to find out why !
+
+Java's solution to this is to only allow single inheritance, but to augment this with interfaces.
+Although a bit of a compromise, this mechanism allows us to gain _some_ of the benefits of multiple inheritance, whilst avoiding many of the main pitfalls.

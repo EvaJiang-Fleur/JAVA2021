@@ -1,0 +1,22 @@
+In some situations (e.g. during the coursework marking process) it is useful to be able to run the test cases from the command line
+(rather than having to start up Intellij). In order to run all of the unit tests present within a Maven project,
+change into the project root folder in your command prompt and type:
+
+    Linux/OSX:   ./mvnw clean test
+    Windows:     mvnw clean test
+
+If all unit tests have been passed, you should get a `[INFO] BUILD SUCCESS` message at the end of the output.
+
+If on the other hand some tests were failed, the output should look something like the following:
+
+    Tests run: ?, Failures: ?, Errors: ?, Skipped: ?
+
+    [INFO] ------------------------------------------------------------------------
+    [INFO] BUILD FAILURE
+    [INFO] ------------------------------------------------------------------------
+    [INFO] Total time: 42 s
+    [INFO] Finished at: 1970-01-01T00:00:00Z
+    [INFO] Final Memory: 42M/420M
+    [INFO] ------------------------------------------------------------------------
+    [ERROR] Failed to execute goal test (default-test): There are test failures.
+

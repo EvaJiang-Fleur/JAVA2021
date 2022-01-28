@@ -1,0 +1,3 @@
+Perhaps the simplest way to approach this task is to create a multi-branch IF statement that will classify the triangle. The order of the branches of the IF statements will be very important: you should check for specific/special cases at the top, with more general cases at the bottom (you'll soon understand why later !)
+
+For some triangle variants, you might find it useful to make use of the `getLongestSide` method your wrote previously !

@@ -1,0 +1,22 @@
+The problem with manual testing is that it can be a very time consuming activity to undertake.
+Imagine trying to test a "draw" state for a 10x10 board - this would involve taking 100 separate turns to reach the end of the game.
+Now imagine having to test this draw state a number of times - this soon becomes very tedious.
+
+This is where automated testing can become invaluable - we can test the "model" and "controller" components of the system by replacing the graphical "view" with an automated test script. The game can be extensively tested without clicking a single button of typing a single key.
+
+We have provide a skeleton test script called `ControllerTests` that can be found in the `src/test/java/edu/uob` folder.
+You will notice that the file has only a couple of test methods in it (indicated using the `@Test` annotation).
+You should populate this test script with a comprehensive set of test cases that will fully test your game.
+
+When viewing this file, you may have noticed a new test feature not previously encountered - the `@BeforeEach` annotation
+is used to mark a method which will be executed _before_ any `@Test` methods are run.
+This allows us to create a "setup" method that will initialise any instances that are required to successfully run a `@Test` method.
+
+These kinds of test scripts are an essential element of Test-Driven Development (TDD) as discussed in the Software Engineering unit.
+They help you to think about what the system needs to do in advance of implementation as well as allowing you to check for correct operation, 
+
+They are not easy to come up with - writing a good set of tests is a difficult and time consuming activity.
+This is because writing test cases requires you to perform "problem analysis" in order to understand the situation
+and think about all the possible states of the system (something that we did for you in the Triangles exercise !).
+Such analysis is an essential developer skill, as is the ability to document the outcomes of this analysis formally as a set of test cases.
+

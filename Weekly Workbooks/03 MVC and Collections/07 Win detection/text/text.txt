@@ -1,0 +1,15 @@
+There is no point playing the game if nobody can actually win !
+Add code to your controller that will detect when a win has been achieved.
+You should check for wins in all directions (horizontally, vertically and diagonally).
+Horizontal, Vertical are relatively easy (Diagonals are a bit more tricky !)
+
+If the game reaches a situation where all cells are filled, but no player has reached the win threshold,
+the game should be considered a "draw" and the model updated to reflect this (by calling the appropriate methods).
+
+You should attempt to make your `OXOController` as flexible and versatile as possible.
+It should therefore be able to perform win detection on grids of any size (not just 3x3).
+
+When a game has been won, the game should NOT exit - this is to allow the winner to glory in their victory.
+It is however important that your controller should accept no further play commands
+(i.e. no additional cells can be claimed).
+This is to stop the loser carrying on playing after a game has already been won !

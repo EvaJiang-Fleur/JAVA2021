@@ -1,0 +1,31 @@
+The Model-View-Controller (MVC) "pattern" is a common structural convention that is used widely in the development of
+interactive systems. To help get you started in this assignment, you have been provided with an <a href="cw-oxo/" target="_blank">MVC template</a> for the OXO project !
+
+Pull a copy of this template from the GitHub repository and then open the project in Intellij.
+Take a look at the slides and video above for an introduction to the concept of the Model-View-Controller pattern,
+then use the knowledge gained to explore the OXO game template.
+
+The `OXOModel` class contains all of the core data structures required by the game - you can use the public methods
+provided by this class in order to manipulate the following internal state:
+
+- The number of cells in a row required to win the game (3 in a standard game)
+- The set of players currently playing the game (2 in a standard game !)
+- The player whose turn it currently is
+- The "owner" (player who has claimed) each cell in the game grid
+- The winner of the game (when the game ends)
+- Whether or not the game has been drawn (all cells filled, but with no winner !)
+
+The "Rendering Logic" has already been implemented for you: any changes to the state of the `OXOModel`
+will be automatically rendered in the `OXOView`. 
+Your main task is to implement the "Event Handling Logic" in the `OXOCOntroller` class.
+Your code will need to manipulate the state of the `OXOModel` by calling appropriate methods on it.
+You will however NOT need to interface directly with the `OXOView` class.
+
+You may alter and add to the `OXOController` and `OXOModel` classes, however 
+you should NOT change the signatures of any of the _existing_ methods
+(if you change the method names or parameters, you may break the marking scripts used to assess your work after submission !)
+You should NOT alter the `OXOView` class at all.
+The remaining tasks in this week's (and next week's) workbooks will lead you through the features that you need to implement to complete the assignment.
+
+Finally, it is very important to remember that the `OXOModel` class should be used to maintain ALL game state.
+You should definitely NOT be storing any game state in your `OXOController` class - bad things will happen if you do !

@@ -1,0 +1,13 @@
+One solution to the problems identified in the previous section is a Java mechanism called **Generics**. This mechanism allows us to designate a particular compound data structure to hold a specific object type. This allows us to make use of untyped data structures, whilst at the same time enforcing type checking at compile time. Java provides a number of very useful compound data structures in the _Collections_ package that make use of the generics. Watch the video linked to above for an introduction into the _Collections_ package.
+
+Use this knowledge to convert the board grid data structure in the `OXOModel` class from an Array to an
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html" target="_blank">ArrayList</a>.
+
+In order to fully implement dynamic board size features, you will need to:
+- Change your `cells` variable from a 2D array into some `ArrayLists`
+- Alter the OXOModel constructor to initialise your `ArrayLists`
+- Update the cell owner "getter" and "setter" methods to operate on the `ArrayLists`
+- Add two methods to `OXOModel` called `addColumn()` and `addRow()` that allow the board size to grow
+- Add two methods to `OXOModel` called `removeColumn()` and `removeRow()` that allow the board size to shrink
+
+You should make your code as robust as possible, preventing the data held in the model from getting into any undesirable states.

@@ -1,0 +1,13 @@
+Currently the core data structure of the `OXOModel` class is a 2D array.
+This allows us to maintain a data representation of the current state of the board at any particular time.
+There is however a problem in that this constrains us to a particular board size (i.e. 3x3).
+It would be nice to be able to alter the size of the board _during_ a game !
+For example, if during a game it became clear that there was going to be a draw
+(all the blank cells were being used up and no one was going to win)
+it would be nice to be able to increase the board size in order to allow play to continued
+(and hopefully a winner might eventually triumph !)
+
+Luckily there are a number of dynamic data types (such as Queues, Stacks, Lists etc.)
+provided by some of the core Java libraries that allow us to store _dynamically_ sized groups of objects.
+Take a look at the slides and video above to gain an understanding of these data structures and the problems
+and challenges involved in using them.

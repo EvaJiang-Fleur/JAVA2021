@@ -1,0 +1,17 @@
+The "Win Threshold" is the number of cells in a row required to win a match (3 in a "standard" game).
+It would make for a more interesting game if it were possible to change this threshold during a match.
+To support this feature, the `OXOGame` class includes interaction features to allow the user to indicate the desired win threshold:
+- Pressing the `+` key on the keyboard should increase the win threshold 
+- Pressing the `-` key on the keyboard should decrease the win threshold 
+
+Although the game is able to detect the pressing of the `+` and `-` keys, the internal win threshold is not updated.
+The `increaseWinThreshold()` and `decreaseWinThreshold()` methods inside `OXOController` are called when the keys are pressed,
+however these two methods are currently empty, so pressing the keys has no effect.
+Add code to the `increaseWinThreshold()` and `decreaseWinThreshold()` methods in your `OXOController`
+so that they alter the win threshold value held inside the `OXOModel` (by calling the relevant getter and setter methods).
+
+You should make your code as robust as possible, preventing the data held in the model from getting into any undesirable states. You should also ensure that all game state is stored in the `OXOModel` and not in your `OXOController`.
+
+Note that you are NOT responsible for checking that the win threshold is achievable
+(i.e. that the board is wide or high enough to allow the win threshold to be reached).
+If the user wishes to choose an impossible-to-achieve threshold, that is up to them - your controller shouldn't interfere.

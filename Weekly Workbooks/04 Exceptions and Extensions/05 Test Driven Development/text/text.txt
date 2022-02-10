@@ -1,0 +1,7 @@
+As we have discuss previously, Test Driven Development is a key practice in Agile development.
+The remaining tasks in this workbook focus on implementing extensions to the basic OXO game.
+As such, this is an ideal opportunity to practice Test-Driven Development in its truest sense
+(i.e. writing tests _before_ writing the code to implement them).
+For each remaining task, try to identify a comprehensive set of test cases _before_ you attempt to write any code.
+You can then use these tests to support and drive your programming activity.
+This will make the development process similar to the "Triangle Variant Classification" exercise you completed previously - except that this time YOU will write the test script yourselves !

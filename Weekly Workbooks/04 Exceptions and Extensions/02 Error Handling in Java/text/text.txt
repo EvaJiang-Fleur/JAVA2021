@@ -1,0 +1,18 @@
+It is more than possible that a user will at some point make a mistake and input a "bad" cell identifier
+(for example, a cell that doesn't exist or one that has already been claimed by one of the players).
+In Java handling these kinds of unintended run-time errors is achieved using a language feature called **Exceptions**.
+This includes a set of special classes and an error handling mechanism that is part of the Java programming language.
+View the slides and video above to gain an understanding of the concept of exceptions and to
+see a demonstration of exceptions in action.
+
+When making use of exceptions in our OXO game, we first need to appreciate the range of the different types of user
+input error that are possible. These include the following:
+
+- Already Taken: The specified cell exists, but it has already been claimed by a player
+- Outside Range: The identifiers are valid characters, but they are out of range (i.e. too big or too small)
+- Invalid Identifier Length: The entire identifier string is longer (or shorter) than the required two characters
+- Invalid Identifier Character: The row is not a letter character or the column is not a number digit
+
+To help you to handle using input errors in your OXO game, we have provided you with a set of exception classes that
+can be used to represent each of the above. These exception classes are illustrated in the class hierarchy shown below
+(note that the notations used in the diagram are from UML - something that you will be studying in the Software Engineering unit !)

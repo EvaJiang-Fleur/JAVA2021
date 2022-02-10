@@ -1,0 +1,15 @@
+Remember that this assignment WILL be assessed and the mark will count towards your grade for this unit.
+In order to submit your code, go to "Assessment, submission and feedback" section on Blackboard page for this unit.
+It is essential that your code compiles and runs before you submit it
+(otherwise we will not be able to run it to mark it !).
+Make sure it is possible to build and run your project on the command line using the `mvnw` command.
+
+It is VERY important that you do NOT change the name or parameters of any of the classes and methods that
+you have been given. Scripts will be used to automatically test your code to make sure
+it operates correctly - if you change them we won't be able to test your code !
+It would also be wise to make sure the original skeleton test script still works with your program.
+
+Note also that you should not have made any permanent changes to the
+`OXOView`, `OXOGame` or `OXOPlayer` classes.
+These will get replaced during the marking process, so you shouldn't be relying on any code
+that you have added to them !

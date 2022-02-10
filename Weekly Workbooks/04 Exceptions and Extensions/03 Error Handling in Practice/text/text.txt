@@ -1,0 +1,12 @@
+Now that you have a high-level understanding of Java's exceptions mechanism and an appreciation of the range of input error a user might make, let us use this information to actually implement error handling in the OXO game.
+Take a look at the slides and video linked to above to find out how to work with exceptions in Java.
+
+With the knowledge gained, implement error handling in your controller class. Add appropriate input checking features to your `handleIncomingCommand` method to determine if the specified cell identifier is valid:
+- If the identifier is VALID, mark the specified cell as being owned by the player.
+- If the identifier is INVALID, prevent the move from taking place and instead instantiate and
+"throw" the relevant exception (depending on the type of input error that has been made).
+
+The `OXOGame` will "catch" any exceptions "thrown" and print out a relevant error message to the terminal/console as feedback to the user.
+
+Test your program manually by playing a game and entering a range of erroneous inputs,
+making sure that all errors are trapped and reported correctly.

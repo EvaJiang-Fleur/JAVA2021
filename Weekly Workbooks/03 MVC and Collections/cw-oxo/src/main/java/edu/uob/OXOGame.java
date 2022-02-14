@@ -97,6 +97,7 @@ public class OXOGame extends Frame
   public void keyTyped(KeyEvent event) {
     if (event.getKeyChar() == '=') controller.increaseWinThreshold();
     if (event.getKeyChar() == '-') controller.decreaseWinThreshold();
+    view.repaint();
   }
 
 

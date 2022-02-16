@@ -1,0 +1,10 @@
+Once you have some ideas about how you might go about refactoring the code,
+hover your mouse over the buttons below to reveal some of our suggestions
+and see if you agree with them...
+
+
+<img src="answer.jpg" title="You could put the tests for image file extensions into a method called &quot;isImageFile&quot; ?" style="vertical-align:bottom" />
+<img src="answer.jpg" title="What if you wrote a method called &quot;replaceAllPixels&quot; that took the 2D pixelData array as a parameter and did all the colour replacements for that entire image ?" style="vertical-align:bottom" />
+<img src="answer.jpg" title="You could write a method called &quot;replaceSinglePixel&quot; that searched through the original colour array and then did a single replacement using the relevant colour from the replacement array" style="vertical-align:bottom" />
+<img src="answer.jpg" title="You could write a method called &quot;getColourIndex&quot; that searched through the original colour array for a particular colour and returned the index value" style="vertical-align:bottom" />
+<img src="answer.jpg" title="Using the pair of arrays for colour replacement is fairly ugly - you could use a better data structure for the lookup table (such as a hash map)" style="vertical-align:bottom" />

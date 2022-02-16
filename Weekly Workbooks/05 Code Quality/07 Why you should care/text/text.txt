@@ -1,0 +1,6 @@
+You might be wondering why we are so keen to impress on you the importance of code quality.  
+View the slides and video to find out why !
+
+Since we have only just introduced many of the code quality concepts in this current workbook, we won't be expecting you to have applied the principles in your current assignment exercise (OXO). You should however be sure to use all of the concepts and constructs covered in this week's workbook in your future development work (both on this unit and beyond !).
+
+In future, assignments for this unit you are going to be assess (at least in part) based on your code quality !

@@ -1,0 +1,3 @@
+The quality of code is always in flux and has a tendency to degrade over time (unless an effort is made to periodically reorganise and revise the codebase). View the slides and video relating to code decay and code refactoring.
+
+It is hard to come up with a hands-on exercise for this task (since it addresses longer-term issues than can't really be covered in a small and compact activity). Issues of code decay may become directly relevant to your work later on in this unit (and in the programme in general). You may however like to revisit this section at that point for advice on refactoring.

@@ -1,0 +1,31 @@
+View the slides and video above to gain an understanding of the nature and impact of code complexity. 
+Some of the ideas might seem a little sophisticated, but don't worry, you won't be asked to calculate complexity values
+(there are plenty of tools available that will do this for you).
+
+Once you have an understanding of the nature of complexity, consider the code fragment shown below. The sample code loops through a folder of images and loads each in turn into a 2D array of pixels. The code then scans through all the pixels in this 2D array and replaces the colours found using a look-up table (consisting of a pair of arrays). 
+
+``` java
+
+String[] folderContent;      // Initialised elsewhere
+Colour[] originalColours;    // Initialised elsewhere
+Colour[] replacementColours; // Initialised elsewhere
+
+for (String filename: folderContent) {
+    if((filename.endswith(".jpg")) || (filename.endswith(".JPG")) || (filename.endswith(".png")) || (filename.endswith(".PNG"))) {
+        Colour[][] pixelData = loadPixelData(filename);
+        for(int x=0; x<pixelData.length ;x++) {
+            for(int y=0; y<pixelData[0].length ;y++) {
+                for(int i=0; i<originalColours.length ;i++) {
+                    if(pixelData[x][y] == originalColours[i]) {
+                        pixelData[x][y] = replacementColours[i];
+                    }
+                }
+            }
+        }
+        savePixelData(pixelData, filename);
+    }
+}
+
+```
+
+Even though the code is fairly short, a method containing this code would have a **Cyclomatic Complexity** of 10 and a **Depth-of-Nesting** of 6 (both very high values for such a short segment of code). Think about how you might _refactor_ this code to make this particular method _less complex_ and therefore _more readable_.

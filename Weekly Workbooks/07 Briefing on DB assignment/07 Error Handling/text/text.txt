@@ -1,0 +1,17 @@
+Your server should receive incoming messages, interrogate the data stored in the database
+and finally return an appropriate response to the client. 
+Your query interpreter should identify any errors in the construction of queries
+(for example queries not conforming to the BNF or queries that include unknown database / table / attribute identifier).
+The response returned from your server must begin with one of the following two "status" tags:
+
+- `[OK]` for valid and successful queries, followed by the results of the query.
+- `[ERROR]` if the query is invalid, followed by a suitable human-readable message that provides information about the nature of the error.
+
+You may wish to make use of exceptions to handle errors internally within your server, however it is 
+essential that your response to the client begins with the correct status tag (since these will be used by the automated
+testing scripts during the marking process).
+
+Note that because you are not required to maintain data type information for the attributes
+in a table, it will not be possible for you to validate the type of incoming data.
+It is therefore the responsibility of the user to ensure that only numerical data is stored in
+numerical attributes and string data is stored in string attributes etc.

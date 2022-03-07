@@ -1,0 +1,24 @@
+Now that you have a communication mechanism in place, we need something to transmit !
+Clients will communicate with the server using a simplified version of the SQL database query language.
+Your task is to write a handler for the incoming commands which will parse them, perform the specified queries and return the result to the client.
+The query language we shall use for this purpose supports the following main types of query:
+
+- USE: changes the database against which the following queries will be run
+- CREATE: constructs a new database or table (depending on the provided parameters)
+- INSERT: adds a new entity to an existing table
+- SELECT: searches for entities that match the given condition
+- UPDATE: changes the data contained within a table
+- ALTER: changes the structure (rows) of an existing table
+- DELETE: removes entities that match the given condition from an existing table
+- DROP: removes a specified table from a database, or removes the entire database
+- JOIN: performs an **inner** join on two tables (returning all permutations of all matching entities)
+
+A grammar that fully defines the simplified query language is provided in <a href="resources/BNF.txt" target="_blank">this BNF document</a>.
+Note that your server should be able to correctly parse incoming commands irrespective of
+the number of _additional_ whitespace characters between tokens. So for example:
+<pre>SELECT    *  FROM     people  WHERE   Name  ==  'Steve' ;</pre>
+is valid and acceptable, being equivalent to:
+<pre>SELECT * FROM people WHERE Name=='Steve';</pre>
+
+Note that you should NOT use any existing parsers or parser generators (Yacc, Lex, Antlr etc.)
+The aim of this assignment is to implement the command parsing using your own code.

@@ -1,0 +1,8 @@
+It is up to you if you want to store the column names in the top row of the data file (as illustrated in the sample data file) or separately in a special schema textfile. Just remember that if you store them separately it is essential to keep them synchronised and consistent.
+
+It is not necessary to implement a type system within the database - 
+you can just store everything as simple text strings.
+
+It is _not_ your responsibility to normalise the database - this is a job for
+developers who have designed the database schema and who make use of your database server.
+If you don't know what normalisation is, then don't worry - you don't need to know for this assignment (although I bet you are intrigued to find out now ;o)

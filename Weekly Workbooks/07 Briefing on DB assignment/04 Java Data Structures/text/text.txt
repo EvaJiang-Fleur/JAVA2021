@@ -1,0 +1,25 @@
+Once the data has been read in from the filesystem, you will need to store this in memory.
+You will need to devise a suitable set of classes to represent this data inside your Java program.
+Think carefully about the tabular nature of relational databases and then write a set of classes
+that match this structure. You will need to consider a wide range of different elements of the
+database, including: tables, rows, columns, keys, table names, column names, data values, ids
+and relationships between entities.
+
+Remember that this teaching block focuses on "development" (not just "coding") and as such we are
+attempting to develop your analysis and design skills. This exercise is more than just implementing a
+pre-defined specification - it requires you to understand the domain, be able to deconstruct
+the problem and make informed design decisions to achieve a successful solution. As such,
+it is not easy - you are likely to make mistakes and will need to refactor your code at different
+stages over the next few weeks.
+
+Once you have defined a collection of classes that you feel are appropriate to the problem,
+use the file reading methods that you wrote in the previous section to populate instances of your classes
+with data read in from the sample data file. In order to support you in building structures to store relationships,
+we have provided an <a href="resources/sheds.tab" target="_blank">additional data file</a>.
+The `PurchaserID` column in this new data file is a **foreign key** that provides a link to the `id` of a person
+in the `people` data file. In order to fully exercise your classes as you develop your server further, you will need
+to write additional data files to augment those given to you.
+
+Once you have successfully stored the imported data in your classes, the next step is to write a
+method to save these structures _back out_ to the filesystem again
+(using appropriate features of the Java File API).

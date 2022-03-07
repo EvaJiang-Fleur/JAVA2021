@@ -1,0 +1,4 @@
+In order to check that your code is successfully reading and writing data from the files,
+you should alter the data _whilst it is in memory_ (i.e. _after_ you have read it in but _before_ you write it back out again).
+You could for example replace the age of all people in the table with a randomly generated one. 
+By changing the data in this way, you can check to make sure that the file system files are actually being over-written and updated !

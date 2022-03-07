@@ -1,0 +1,4 @@
+SQL _keywords_ are case insensitive, so `select * from people;` is equivalent to `SELECT * FROM people;`.
+Convention has it that query examples are typically shown with uppercase keywords (to differentiate them from identifiers and literals).
+
+The range of numbers (max and min) match those supported by the standard Java int and float types.

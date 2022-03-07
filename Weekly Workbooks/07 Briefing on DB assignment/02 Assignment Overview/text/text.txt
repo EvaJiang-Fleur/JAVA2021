@@ -1,0 +1,33 @@
+In this assignment, you will build a relational database server from scratch.
+This server should receive incoming requests (conforming to a standard query language)
+and then interrogate and manipulate a set of stored records.
+Your server will maintain persistent data as a collection of files on your filesystem.
+You will not be required to implement a client application - this will be provided for you 
+(to allow you to connect to your server and check that is it working correctly).
+
+As usual, you have been provided with a <a href="resources/cw-db" target="_blank">Maven project</a>
+to help get you started with the assignment.
+There is a <a href="resources/cw-db/src/test/java/edu/uob/DBTests.java" target="_blank">template test script</a>
+for you to use - make sure you add suitable test cases to this script to ensure that your application is
+fully and systematically tested.
+
+It is **essential** that your server is _robust_ - you should detect and trap errors effectively
+and ensure that the server continues running at all times. Just imagine a world in which servers
+had to be manually restarted every time something unexpected was encountered.
+It's going to be very difficult for your server to pass the marking tests if it has crashed !
+
+Note that your main class MUST be called `DBServer` and MUST include the following constructor and input handling method:
+
+* `public DBServer(File)`
+* `public String handleCommand(String)`
+
+If you change the name of the class or either of the above methods, we won't be able to run your code !
+We will be using automated marking scripts and if you server does not conform to the above,
+we won't be able to test it ! In order to avoid any doubt - we have added `KEEP this signature...`
+comments to the maven project template for anything you should not change.
+
+Your submission will be assessed on the success with which it implements the described query language,
+as well as the flexibility and robustness with which your server operates.
+You will also be assessed using the Code Quality metrics outlined earlier in the unit.
+Finally, since test-driven development is key to the processes taught on this programme, 
+the extent and quality of your test cases will also be considered.

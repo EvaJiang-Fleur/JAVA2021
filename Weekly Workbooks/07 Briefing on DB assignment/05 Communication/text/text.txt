@@ -1,0 +1,24 @@
+It is not the aim of this assignment to address the topic of network or socket programming.
+For this reason, the networking aspects of the server have been provided for you
+in <a href="resources/cw-db/src/main/java/edu/uob/DBServer.java" target="_blank">the template server class</a>.
+
+The database server listens on port 8888 in order to receive incoming messages. These incoming commands are then
+passed to the `handleCommand` method for processing. Your task is to add to the `handleCommand` method to respond to the commands.
+At this stage in the assignment, you should not attempt to interpret the content of the incoming messages.
+Rather it should respond with the content of _all_ of the tables currently in your database
+(irrespective of what the incoming message contained).
+You should attempt to make the response as human-reader friendly as possible.
+
+It is essential that your response is returned by the `handleCommand` method and NOT just printed out in the local console.
+When we test your server during the marking process, we will be monitoring what is returned via the network.
+You won't get any marks for just doing `println` messages in the terminal !
+
+To help you ensure that your server conforms to the correct protocol, a 
+<a href="resources/cw-db/src/main/java/edu/uob/DBClient.java" target="_blank">command-line client</a>
+has been provided for you. You should not have to change any of the code in the client,
+any features that you implement in this class will not be executed during the marking process.
+The client has been provided purely to allow you to check that your server is operating correctly.
+During the marking process, this client will be discarded and replaced by an automated testing component.
+
+For the sake of simplicity, you may assume only a single client is connected at any one time.
+(i.e. there is no need to handle parallel queries or deal with issues of contention).

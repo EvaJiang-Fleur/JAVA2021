@@ -208,10 +208,10 @@ The query language we shall use for this purpose supports the following main typ
 
 - USE: changes the database against which the following queries will be run
 - CREATE: constructs a new database or table (depending on the provided parameters)
-- INSERT: adds a new entity to an existing table
+- INSERT: adds a new entity (row) to an existing table
 - SELECT: searches for entities that match the given condition
-- UPDATE: changes the data contained within a table
-- ALTER: changes the structure (rows) of an existing table
+- UPDATE: changes the existing data contained within a table
+- ALTER: changes the structure (columns) of an existing table
 - DELETE: removes entities that match the given condition from an existing table
 - DROP: removes a specified table from a database, or removes the entire database
 - JOIN: performs an **inner** join on two tables (returning all permutations of all matching entities)

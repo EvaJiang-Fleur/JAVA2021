@@ -65,7 +65,7 @@
 
 <TableName>      ::=  <PlainText>
 
-<ColumnName>     ::=  <PlainText>
+<AttributeName>  ::=  <PlainText>
 
 <DatabaseName>   ::=  <PlainText>
 

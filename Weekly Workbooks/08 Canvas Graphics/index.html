@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>08 Canvas Graphics</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">08 Canvas Graphics</h1>
+</header>
+<h2 id="canvas-graphics">Canvas Graphics</h2>
+<h3 id="weekly-briefing"><a href='https://web.microsoftstream.com/group/2ab518ed-5a83-4c36-bfef-c8a2bf702e79?view=videos' target='_blank'> Weekly Briefing <img src="../../resources/icons/briefing.png" /> </a></h3>
+<h3 id="task-1-introduction">Task 1: Introduction</h3>
+<p>In previous workbooks we have introduced the fundamentals of the Java programming language. In the following weeks we’ll cover a number of more specialised topics. The next two workbooks will focus on creating graphical applications using the JavaFX library. JavaFX has two main parts: “Canvas” &amp; “Controls”. In this current workbook we will start with the drawing Canvas. In a future workbook we will take a look at Controls (aka Widgets).</p>
+<p>For comprehensive documentation, see the full <a href="https://docs.oracle.com/javafx/2/api/" target="_blank">JavaFX API</a>. It’s fairly extensive, but is well structured (using the standard “JavaDoc” format).</p>
+<p>Note that this topic is not an “assessed learning outcome” for this unit - as such, you will not be assessed on it. This topic might however prove to be very valuable if you need a graphical user interface (GUI) for your summer project (or in your future careers) !</p>
+<p>To get started building JavaFX applications with Intellij, create a new project and select “JavaFX” as shown in the screenshot below:</p>
+<p><img src="01%20Introduction/images/wizard.jpg" /></p>
+<p><strong>Hints &amp; Tips:</strong><br />
+Top tip: Be careful of old and outdated tutorials on the Internet (written for previous versions of JavaFX).</p>
+<h1 id="section"></h1>
+<h3 id="task-2-canvas-drawing">Task 2: Canvas Drawing</h3>
+<p><a href='02%20Canvas%20Drawing/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='02%20Canvas%20Drawing/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>The concept of a drawing “canvas” is common to many languages and drawing frameworks, including HTML5, P5.js, JavaFX, D3, SDL, Processing to name but a few. Take a look through the slides and video linked to above to gain an understand of canvas operation. Although our focus in this workbook is primarily on JavaFX, the high-level concepts are transferable to other frameworks (although the method names might differ to some extent).</p>
+<h1 id="section-1"></h1>
+<h3 id="task-3-application-structure">Task 3: Application Structure</h3>
+<p><a href='03%20Application%20Structure/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='03%20Application%20Structure/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>All JavaFX applications have a common structure - see the slides and video above for an overview and explanation of this structure. At this stage we are only interested in understanding the high-level concepts. In the following task we will look at how such a structure is actually achieved in code.</p>
+<h1 id="section-2"></h1>
+<h3 id="task-4-javafx-code-examples">Task 4: JavaFX Code Examples</h3>
+<p><a href='04%20JavaFX%20Code%20Examples/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='04%20JavaFX%20Code%20Examples/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>Enough of the high-level theoretical and conceptual discussion - the slides and video above show how to actually implement the JavaFX application structure in code. In this video, we also illustrate how to use a range of basic canvas drawing primitives.</p>
+<h1 id="section-3"></h1>
+<h3 id="task-5-events">Task 5: Events</h3>
+<p><a href='05%20Events/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='05%20Events/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a> <a href='05%20Events/video/segment-2.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>Event handling is essential for graphical applications that require any form of user interaction (either via keyboard or mouse). Review the slides and video above to gain an understanding of the event mechanism in use within JavaFX. The final video above shows a demonstration of mouse and keyboard events being used to add interactivity to photographic imagery. We will leave it up to you to figure out how the shift in perspective is achieved !</p>
+<h1 id="section-4"></h1>
+<h3 id="task-6-transformation">Task 6: Transformation</h3>
+<p><a href='06%20Transformation/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='06%20Transformation/slides/segment-2.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='06%20Transformation/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a> <a href='06%20Transformation/video/segment-2.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>Transformation is a key feature of canvas drawing platforms that enables more complex and sophisticated drawing to take place. Review the slides and audio narrations above to gain an understanding of transformations and the transformation stack. With this knowledge in mind, think about how you would achieve the following graphic:</p>
+<p><img src="06%20Transformation/images/greyboxes.jpg" /></p>
+<p><strong>Hints &amp; Tips:</strong><br />
+Hover your mouse over the following button to reveal one possible <img src="answer.jpg" title="
+   // Draw the grey box
+   g.setFill(Color.rgb(120, 120, 120));  
+   g.fillRect(40, 40, 30, 30);
+   // Draw the black box
+   g.translate(40, 40);
+   g.rotate(45);
+   g.setFill(Color.rgb(0, 0, 0));
+   g.fillRect(0, 0, 30, 30);
+" style="vertical-align:bottom" /></p>
+<h1 id="section-5"></h1>
+<h3 id="task-7-sprite-sheets">Task 7: Sprite Sheets</h3>
+<p><a href='07%20Sprite%20Sheets/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='07%20Sprite%20Sheets/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>The concept of “Sprite Sheets” is core to many game engine platforms. Java FX provides support for such constructs and permits simple animations to be created. View the slides and video animation above for a brief overview of sprite sheets and a demonstration of them in use to create a flocking simulation.</p>
+<h1 id="section-6"></h1>
+<h3 id="task-8-animation-loops">Task 8: Animation Loops</h3>
+<p><a href='08%20Animation%20Loops/slides/segment-1.pdf' target='_blank'> <img src="../../resources/icons/slides.png" /> </a> <a href='08%20Animation%20Loops/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a> <a href='08%20Animation%20Loops/video/segment-2.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>Animation is a common requirement for many types of graphical canvas application. Review the slides and video above to find out about timers and animation loops. The final video in the set shows an example animation that makes use of cyclic animation loops to achieve organic movement of articulated characters.</p>
+<h1 id="section-7"></h1>
+<h3 id="task-9-final-demonstration">Task 9: Final Demonstration</h3>
+<p><a href='09%20Final%20Demonstration/video/segment-1.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a> <a href='09%20Final%20Demonstration/video/z-solion.mp4' target='_blank'> <img src="../../resources/icons/video.png" /> </a></p>
+<p>In this final section, we bring together everything we have seen so far in this workbook into a final demonstration application that encompasses: canvas drawing primitives, transformations, cyclic animation loops, user interaction and even dynamic data-driven visualisation. The first video provides a piece-by-piece deconstruction of the animation, building it up from first principles. The second of the two videos shows the final animation in action.</p>
+<h1 id="section-8"></h1>
+</body>
+</html>

@@ -5,13 +5,13 @@ The query language we shall use for this purpose supports the following main typ
 
 - USE: changes the database against which the following queries will be run
 - CREATE: constructs a new database or table (depending on the provided parameters)
-- INSERT: adds a new entity (row) to an existing table
-- SELECT: searches for entities that match the given condition
+- INSERT: adds a new record (row) to an existing table
+- SELECT: searches for records that match the given condition
 - UPDATE: changes the existing data contained within a table
 - ALTER: changes the structure (columns) of an existing table
-- DELETE: removes entities that match the given condition from an existing table
+- DELETE: removes records that match the given condition from an existing table
 - DROP: removes a specified table from a database, or removes the entire database
-- JOIN: performs an **inner** join on two tables (returning all permutations of all matching entities)
+- JOIN: performs an **inner** join on two tables (returning all permutations of all matching records)
 
 A grammar that fully defines the simplified query language is provided in <a href="resources/BNF.txt" target="_blank">this BNF document</a>.
 Note that your server should be able to correctly parse incoming commands irrespective of

@@ -11,9 +11,7 @@
 
 <CreateTable>    ::=  "CREATE TABLE " <TableName> | "CREATE TABLE " <TableName> "(" <AttributeList> ")"
 
-<Drop>           ::=  "DROP " <Structure> " " <StructureName>
-
-<Structure>      ::=  "DATABASE" | "TABLE"
+<Drop>           ::=  "DROP DATABASE " <DatabaseName> | "DROP TABLE " <TableName>
 
 <Alter>          ::=  "ALTER TABLE " <TableName> " " <AlterationType> " " <AttributeName>
 

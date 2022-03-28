@@ -26,7 +26,7 @@ Concepts: abstract classes, multiple dynamic dispatch, overriding, operation dec
 
 If you liked single dispatch and polymorphism, you'll love double dispatch. Double dispatch dispatches calls to different concrete methods depending on the runtime types of the two objects involved in the call: dispatch based on 2 types. For example, consider collisions between two game objects which are both referred to by the same abstract superclass. The references are of the same type, but the underlying objects could be drawn from a variety of subclasses. How can we exploit polymorphism to handle these interactions in a seamless way?
 
-Code examples are provided for <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2020_TB-2/code_snippets/rock_paper_scissors2021.zip" target="_blank">rock, paper, scissors</a> and <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2020_TB-2/code_snippets/MammalInteraction2021.zip" target="_blank">mammal interactions</a>  
+Code examples are provided for <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2021_TB-2/code_snippets/rock_paper_scissors2021.zip" target="_blank">rock, paper, scissors</a> and <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2021_TB-2/code_snippets/MammalInteraction2021.zip" target="_blank">mammal interactions</a>  
 
 
 # 
@@ -37,7 +37,7 @@ Concepts: abstract classes,  multiple dynamic dispatch, overriding, operation de
 
 The Visitor Pattern facilitates the addition of new operations to existing object structures without modifying those structures (maybe look up open closed principle). A visitor class is created that implements all of the appropriate specializations. The visitor takes the instance reference as input, and implements the goal through double dispatch.
 
-Code examples are provided for <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2020_TB-2/code_snippets/mammal_visitor.zip" target="_blank">mammal visitor</a> and <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2020_TB-2/code_snippets/credit_card_visitor.zip" target="_blank">credit card visitor</a>
+Code examples are provided for <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2021_TB-2/code_snippets/mammal_visitor.zip" target="_blank">mammal visitor</a> and <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2021_TB-2/code_snippets/credit_card_visitor.zip" target="_blank">credit card visitor</a>
   
 
 
@@ -49,7 +49,7 @@ Concepts: abstract classes,  multiple dynamic dispatch, overriding, operation de
 
 So the great thing about the visitor pattern is that you can use it on dynamic structures like trees as well as the static structures we looked at previously, the credit cards. In this lecture we’ll see how any operations a binary tree may be defined independently from the object structure itself. Specifically, the operations will be encapsulated in a separate object which we shall call the Visitor …
 
-Code example is provided for <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2020_TB-2/code_snippets/tree_visitor.zip" target="_blank">tree visitor</a>   
+Code example is provided for <a href="https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2021_TB-2/code_snippets/tree_visitor.zip" target="_blank">tree visitor</a>   
 
 
 # 

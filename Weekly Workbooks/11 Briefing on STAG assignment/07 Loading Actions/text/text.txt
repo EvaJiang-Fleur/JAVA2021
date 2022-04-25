@@ -1,0 +1,32 @@
+We have provided some example action files for you to use in your project.
+Firstly there is a <a href="resources/cw-stag/config/basic-actions.xml" target="_blank">basic actions file</a>
+to help get you started in constructing your game engine.
+We have also provided an <a href="resources/cw-stag/config/extended-actions.xml" target="_blank">extended actions file</a>
+that can be used for more extensive testing during the later stages of your work.
+
+Both of these documents are written in eXtensible Markup Language (XML).
+In order to successfully parse these XML files, you should use the Java API for XML Processing (JAXP).
+In particular, you should make use of the
+<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html" target="_blank">DocumentBuilder</a>
+class as well as various classes from the 
+<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/package-summary.html" target="_blank">org.w3c.dom</a> package.
+See the "Hints and Tips" section of this task for an example of how to use these classes.
+
+Once loaded in from the XML file, you should store the actions in a suitable data structure so that your server can access them quickly and easily.
+Your first thought might be to use an array or `ArrayList` for this purpose.
+This approach would however require your server to search through all actions each time a command was received from the user.
+In the interests of efficiency (and to provide you with broader experience of using the classes in the Java `Collections` package)
+you should use the following data structure to store all of your actions:
+
+```java
+TreeMap<String,HashSet<GameAction>> actions = new TreeMap<String, HashSet<GameAction>>();
+```
+
+The data structure described in the above code is illustrated in the diagram shown below. The
+<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html" target="_blank">TreeMap</a>
+provides a fast and efficient lookup mechanism - using a `String` key (the trigger keyword/phrase) to map to a 
+<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html" target="_blank">HashSet</a>
+of matching actions. Remember that a particular trigger keyword/phrase may be used
+in more than one action, so we need to map to a _composite_ data structure (rather than just a single `GameAction` element).
+It is useful for us to make use a _set_ (rather than, for example, an `ArrayList`)
+since this allows us to ensure that there are no duplicate actions being stored in the data structure (all elements of a set will be unique).

@@ -1,0 +1,27 @@
+Your aim is to build a game engine server that communicates with one or more game clients.
+Your server will listen for incoming connections from clients (in a similar way to the DB exercise).
+When a connection has been made, your server will receive an incoming command, process the actions
+that have been requested, make changes to any game state that is required and then finally send back a
+suitable response to the client. View the video linked to above for a demonstration of a typical example
+of communication from the perspective of the client (note that there is no audio track in this video).
+
+The basic networking operation is provided for you in the 
+<a href="resources/cw-stag.zip" target="_blank">maven template</a>.
+As with the DB exercise, you do not need to write the client since this is provided for you.
+It is again essential that you do NOT change the code in the client.
+The interactive client will be replaced by an automated test client when marking your work.
+
+The aim of this assignment is to build a versatile game engine that it is able to play _any_ text adventure game
+(providing that it conforms to certain rules). To support this versatility, two configuration files:
+**entities** and **actions** are used to describe the various "things" that are present in the game,
+their structural layout and dynamic behaviours.
+These two configuration files are passed into the game server when it is instantiated like so:
+
+``` java
+public GameServer(File entitiesFile, File actionsFile)
+```
+
+The server will load the game scenario in from the two configuration files, thus allowing a range of different games to be played.
+During the marking process, we will use some custom game files in order to explore the full range of functionality in your code.
+It is therefore essential that your game engine allows these files to be passed in and then reads and interprets their content
+(otherwise we won't be able to test your code).

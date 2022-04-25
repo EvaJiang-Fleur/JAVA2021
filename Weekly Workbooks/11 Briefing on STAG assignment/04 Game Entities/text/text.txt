@@ -1,0 +1,28 @@
+Game **entities** are a fundamental building block of any text adventure game.
+Entities represent a range of different "things" that exist within a game.
+There are a number of different types of entity, including the following:
+
+- Locations: Rooms or places within the game
+- Artefacts: Physical things within the game that can be collected by the player
+- Furniture: Physical things that are an integral part of a location
+(these can NOT be collected by the player)
+- Characters: The various creatures or people involved in game
+- Players: A special kind of character that represents the user in the game
+
+It is worth noting that **locations** are complex constructs and as such
+have various different attributes in their own right. These attributes include:
+- Paths to other locations (note: it is possible for paths to be one-way !)
+- Characters that are currently at a location
+- Artefacts that are currently present in a location
+- Furniture that belongs in a location
+
+All entities are stored in one of the game configuration files using a language called DOT
+(a language we have already encountered when drawing graphviz diagrams in the POSE unit !).
+DOT can be used to express the structure of a graph (which is basically what a text adventure game fundamentally is !)
+
+The big benefit of using DOT files to store game entities is that we can render them graphically -
+so we can SEE the structure of the game configuration.
+The image below illustrates the structure of an example entities file.
+As you can see, each location is represented by a rectangular box containing a number of different entities
+(each type of entity being represented by a different shape). The paths between locations are
+presented in the form of directed arrows.

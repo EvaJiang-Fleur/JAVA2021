@@ -1,0 +1,4 @@
+To ensure that the basic actions file is in the correct location in the project folder and that it is a valid XML file, we have provided a
+<a href="resources/cw-stag/src/test/java/edu/uob/ActionsFileTests.java" target="_blank">JUnit test class</a> for you to use.
+Not only will these tests verify the basic actions file, but they also provides a clear illustration of the use of the JAXP library
+for parsing XML files.

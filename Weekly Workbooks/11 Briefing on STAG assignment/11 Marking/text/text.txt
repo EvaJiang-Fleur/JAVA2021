@@ -1,0 +1,19 @@
+A special set of custom game description files will be used to assess your game during the marking process.
+It is therefore essential your code is able to parse files in the same format as the examples provided !
+The configuration files will be passed as parameters - you should not interfere with file path
+(don't add any additional folders names to the paths !).
+
+Scripts will be used to automatically test your game engine to make sure it is operating correctly.
+It is therefore essential that you adhere to the gameplay commands detailed in this workbook !
+You should also ensure that you do not change the name of your main class - it must be called `GameServer`.
+If you change the name of the class (or the `handleCommand` method) the marking script will not be able to test your code !
+
+This assignment is an opportunity to explore Java in detail and there are a range of alternative avenues you might take when implementing this project.
+You might for example like to consider employing a range of design patterns (as described in the weekly workbooks).
+The Java Core API and Collections package also contains various useful data structures you might like to explore.
+
+Note that the "quality" of your code will be taken into account when assessing your work.
+The code quality metrics outlined earlier in this unit will be used to derive your final mark.
+It is important therefore that you adhere to the structure and style guidelines outlined in the "code quality" workbook.
+It is essential that you take heed of the quality feedback you have received for previous exercises,
+since this will help you improve your work - not just for this exercise, but in the long term.

@@ -1,0 +1,28 @@
+In addition to the standard "built-in" commands (e.g. `get`, `goto`, `look` etc.), your game engine should also
+respond to any of a number of game-specific commands (as specified in the "actions" file).
+Each of these **actions** will have the following elements:
+
+- A set of possible **trigger** words/phrases (ANY of which can be used to initiate the action)
+- A set of **subject** entities that are acted upon (ALL of which need to be present to perform the action)
+- A set of **consumed** entities that are all removed ("eaten up") by the action
+- A set of **produced** entities that are all created ("generated") by the action
+- A **narration** that provides a human-readable explanation of what happened when the action was performed
+
+Note that "being present" requires the entity to _either_ be in the inventory of the player invoking the action
+_or_ for that entity to be in the room/location where the action is being performed. This feature is
+intended to be a shortcut (so that a player can use an entity in their location without having to explicitly pick it up first).
+
+It is worth noting that action triggers are NOT unique - for example there may be multiple "open" actions that
+act on different entities. Note that trigger phrases cannot (and will not) contain the names of entities,
+since this would make incoming commands far too difficult to parse. Just consider the challenge of trying to
+interpret the command: `lock lock with key`.
+
+Upon receiving a trigger word or phrase, your server should attempt to find an appropriate matching action.
+Note that the action is only valid if ALL **subject** entities are available to the player.
+If a valid action is found, your server must then undertake the relevant additions/removals (production/consumption).
+
+When an entity is _produced_, it should be moved from its current location in the game (which might be in the `storeroom`)
+to the location in which the action was trigged. When an entity is _consumed_ it should be removed from its current location
+added into the `storeroom` location. The exception to the above are **locations** where the _paths_ between locations
+should be added or removed when a location is _produced_ or _consumed_ (the location itself should always remain in the game).
+

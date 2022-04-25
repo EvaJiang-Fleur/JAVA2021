@@ -1,0 +1,23 @@
+In order to communicate with the server, we need an agreed language
+(otherwise the user won't know what to type to interact with the game !)
+There are a number of standard "built-in" gameplay commands that your game engine should respond to:
+
+- "inventory" (or "inv" for short): lists all of the artefacts currently being carried by the player
+- "get": picks up a specified artefact from the current location and adds it into player's inventory
+- "drop": puts down an artefact from player's inventory and places it into the current location
+- "goto": moves the player to a new location (if there is a path to that location)
+- "look": describes the entities in the current location and lists the paths to other locations
+
+It is essential that you conform to this standard set of commands, otherwise it won't be possible to play your game
+(and your game engine will fail some of the marking tests !)
+
+In addition to these standard "built-in" commands, it is possible to customise a game with a number of additional **actions**.
+These will be introduced in more detail in a later section of this workbook.
+
+The skeleton 
+<a href="resources/cw-stag/src/main/java/edu/uob/GameServer.java" target="_blank">GameServer</a> class
+(that you have been given as part of the template project) includes all the code required to deal with network communication.
+All you will need to do is to complete the command handler that interprets the incoming command string,
+makes changes to the game state and then return a suitable text response to send back to the client.
+
+

@@ -1,0 +1,22 @@
+Interpreting the input from users in this assignment is very different from dealing with queries in the Database exercise.
+The simplified SQL that we used for the last assignment was limited, rigid and constrained.
+As such, it was possible to write a reasonably concise BNF grammar to define the entire language.
+The same is not true for natural language, which is very complex, permits much variation and is used diversely (depending on the speaker/writer).
+The best we can hope do is to try to make our command interpreter as flexible and versatile as possible - in order to cope with most eventualities.
+
+In order to support variability, your interpreter should be able to cope with _additional_ "decorative" words being inserted into a command
+(sometimes referred to as "syntactic sugar"). For example the basic command `chop tree with axe` 
+might well be entered by the user as `chop down the tree using the axe`.
+Both versions are equivalent and should be accepted as such by your command interpreter.
+
+To further support flexible natural language communication, your server should be able to operate with shortened, "partial" commands.
+It is convenient for the user to be able to omit _some_ of the subjects from a command, whilst still providing enough information for
+the correct action to be identified.
+For example, the command `unlock trapdoor with key` could alternatively be entered as _either_ `unlock trapdoor` _or_ `unlock with key` -
+both of which provide enough detail for an action match to be attempted.
+As a BARE MINIMUM, a valid action command MUST contain a trigger word/phrase and AT LEAST ONE subject.
+An action on its own (without a subject) is unlikely to provide enough information to enable a single matching action to be found. 
+
+The above "fuzzy" matching of actions is however risky - there may be situations where _more that one_ action matches a particular command.
+If a particular command is ambiguous (i.e. there is _more than one_ **valid** and **performable** action possible - given the current state of the game) then NO action should be performed and a suitable warning message sent back to the user
+(e.g. "there is more than one thing you can 'open' here - which one do you want ?")

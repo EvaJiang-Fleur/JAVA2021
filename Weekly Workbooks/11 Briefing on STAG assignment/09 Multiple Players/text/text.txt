@@ -1,0 +1,23 @@
+If you are feeling ambitious, extend your game so that it is able to operate with more than just a single player.
+In order to support this feature, incoming command messages begin with the username of the player who issued that command.
+For example, a "full" incoming message might therefore take the form of:
+```
+Simon: open door with key
+```
+
+Where everything _before_ the first `:` is the player's name and everything _after_ is the command itself.
+Valid player names can consist of uppercase and lowercase letters, spaces, apostrophes and hyphens.
+Note that there is no "formal" player registration process - when the server encounters a command from
+a previously unseen user, a new player should be created and placed in the start location of the game.
+
+Note that there is no need for your server to implement any form of authentication - 
+you can assume that the client handles this responsibility.
+Your server should simply trust any commands that purport to come from a particular user.
+
+It is essential that when an incoming message is received, the command is applied to the _correct_ player.
+To achieve this, you will need to maintain _some_ elements of game state _separately_ for each individual player.
+For example, each player may be in a different location in the game and will carry their own inventory of items.
+
+One final thing to remember is that you should include _other_ players in your description of a location
+when a "look" command is issued by a user. There is no point having multiple players in the game
+if they can't see each other !

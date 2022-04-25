@@ -1,0 +1,21 @@
+Every game has a "special" location that is the starting point for an adventure.
+The start location can be called anything we like, however it will _always_ be the **first** location
+that appears in the "entities" file.
+
+There is another special location called `storeroom` that can be found in the entities file.
+This location does not appear in the game world (there will be no paths to/from it).
+The `storeroom` is a container for all of the entities that have no initial location in the game.
+Everything needs to exist somewhere in the game structure (so that they can be defined in the entities file).
+These entities will not enter the game until an action places them into another location within the game.
+
+Note that the locations will _always_ be **first** in the entities file and the paths section will _always_
+appear **after** them (the parser doesn't like it if we switch this ordering !)
+
+To ensure that the basic entities file is in the correct location in the project folder and that it is a valid DOT file, we have provided a
+<a href="resources/cw-stag/src/test/java/edu/uob/EntitiesFileTests.java" target="_blank">JUnit test class</a> for you to use.
+Not only will these tests verify the basic entities file, but they also provides a clear illustration of the use of the JPGD library
+for parsing DOT files.
+
+A `.jar` file containing the JPGD library can be found in the `libs` folder of the maven template.
+This _should_ already be part of the project dependencies, but it is useful to know where the library resides
+(in case you have add it manually to you Intellij project).

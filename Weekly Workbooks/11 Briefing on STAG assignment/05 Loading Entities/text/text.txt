@@ -1,0 +1,26 @@
+We have provided some example entity files for you to use in your project.
+Firstly there is a <a href="resources/cw-stag/config/basic-entities.dot" target="_blank">basic entities file</a>
+to help get you started in constructing your game engine.
+We have also provided an <a href="resources/cw-stag/config/extended-entities.dot" target="_blank">extended entities file</a>
+that can be used for more extensive testing during the later stages of your work.
+
+You already have much experience of writing parsers from previous exercises (both on this unit and others).
+We don't really want to have to cover old ground, so for this assignment you will NOT be required to build your own parser.
+Instead, you are able to use existing parsing libraries for reading in the configuration files.
+There is considerable educational value in learning to use existing libraries and frameworks in this way.
+
+With this in mind, you should use the
+<a href="http://www.alexander-merz.com/graphviz/doc/com/alexmerz/graphviz/Parser.html" target="_blank">JPGD parser</a>
+in order to parse the entity DOT files and extract a set of 
+<a href="http://www.alexander-merz.com/graphviz/doc/com/alexmerz/graphviz/objects/package-summary.html" target="_blank">GraphViz Objects</a>
+which can then be manipulated by your Java code. See the "Hints and Tips" section of this task for an example of how to use these classes.
+
+Once you have read in the entities from the DOT file, you will need to store them in a suitable datastructure so that you server can access them.
+We have provided you with an abstract `GameEntity` class in the maven project that you should use to represent entities within your game.
+You should write a number of concrete subclasses that inherit from this abstract class to represent specific types of entity.
+
+All entities will need at least a name and a description, some may need additional attributes as well.
+To make things easier, entity names cannot contain spaces (the DOT parser doesn't like it if they do !).
+It is also worth mentioning that entity names defined in the configuration files will be unique.
+You won't have to deal with two things called `door` (although your might see a `blue-door` and a `red-door`).
+As such, you can safely use entity names as unique identifiers.

@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.File;
 import com.alexmerz.graphviz.Parser;
 import com.alexmerz.graphviz.ParseException;
 import com.alexmerz.graphviz.objects.Graph;
@@ -20,7 +21,7 @@ final class EntitiesFileTests {
   void testBasicEntitiesFileIsReadable() {
       try {
           Parser parser = new Parser();
-          FileReader reader = new FileReader("config/basic-entities.dot");
+          FileReader reader = new FileReader("config" + File.separator + "basic-entities.dot");
           parser.parse(reader);
           Graph wholeDocument = parser.getGraphs().get(0);
           ArrayList<Graph> sections = wholeDocument.getSubgraphs();
